@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<udm:DeploymentPackage version='9' application='eTreasury' xmlns:Script='http://www.w3.org/2001/XMLSchema' xmlns:udm='//www.w3.org/2001/XMLSchema'><deployables><Script:Script nam='A' file='fileA'><scanPlaceholders>false</scanPlaceholders><PreScannedPlaceholders>true</PreScannedPlaceholders><checksum>9</checksum><fileUri>Nexus</fileUri><executeOrder>9</executeOrder></Script:Script></deployables><dependencyResolution>LATEST</dependencyResolution><undeployDependencies>false</undeployDependencies></udm:DeploymentPackage>
