@@ -1,2 +1,56 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<udm:DeploymentPackage version='51' application='eTreasury' xmlns:Script='http://www.w3.org/2001/XMLSchema' xmlns:udm='//www.w3.org/2001/XMLSchema'><deployables><Script:Script name='A' file='fileA'><scanPlaceholders>false</scanPlaceholders><PreScannedPlaceholders>true</PreScannedPlaceholders><checksum>51</checksum><fileUri>Nexus</fileUri><executeOrder>51</executeOrder></Script:Script></deployables><dependencyResolution>LATEST</dependencyResolution><undeployDependencies>false</undeployDependencies></udm:DeploymentPackage>
+<?xml version="1.0" encoding="UTF-8"?>
+<udm.DeploymentPackage application="CML" version="5630430T8">
+   <application/>
+   <orchestrator/>
+   <deployables>
+      <script.Script name="/deploy.sh">
+         <tags/>
+         <scanPlaceholders>false</scanPlaceholders>
+         <preScannedPlaceholders>true</preScannedPlaceholders>
+         <placeholders/>
+         <checksum>f6dcab8449c74bda38266f38450404c8510d0b88</checksum>
+         <fileUri>https://code.td.com/projects/AM/repos/etreasury_xldeploy/raw/deploy.sh</fileUri>
+         <credentials ref="Configuration/AMCB/davexxmh"/>
+         <executeOrder>75</executeOrder>
+      </script.Script>
+      <file.File name="/EP_UOB_5630430T8_cml_dev2.ear">
+         <tags/>
+         <scanPlaceholders>false</scanPlaceholders>
+         <preScannedPlaceholders>true</preScannedPlaceholders>
+         <placeholders/>
+         <checksum>eb45e78f8d0512d042c1d34a5bcbab0e8221ee1e</checksum>
+         <fileUri>https://repo.td.com/repository/3rd-party-raw/cml-etreasury/dev2/5.6.3.0.43.0-T8/EP_UOB_5630430T8_cml_dev2-1.0.0.ear</fileUri>
+         <targetPath>/tmp/xldeploy</targetPath>
+         <targetPathShared>true</targetPathShared>
+         <createTargetPath>true</createTargetPath>
+         <targetFileName>EP_UOB_5630430T8_cml_dev2.ear</targetFileName>
+      </file.File>
+      <script.Script name="/df.sh">
+         <tags/>
+         <scanPlaceholders>false</scanPlaceholders>
+         <preScannedPlaceholders>true</preScannedPlaceholders>
+         <placeholders/>
+         <checksum>cf524d3b4017ee0a2491c1b068ddac2fc82ed2a2</checksum>
+         <fileUri>https://code.td.com/projects/AM/repos/etreasury_xldeploy/raw/df.sh</fileUri>
+         <credentials ref="Configuration/AMCB/davexxmh"/>
+         <executeOrder>45</executeOrder>
+      </script.Script>
+      <file.File name="/Config_UOB_5630430T8_cml_dev2.jar">
+         <tags/>
+         <scanPlaceholders>false</scanPlaceholders>
+         <preScannedPlaceholders>true</preScannedPlaceholders>
+         <placeholders/>
+         <checksum>d3de46c39dc42c3dec9724a01de338bb1d31ec55</checksum>
+         <fileUri>https://repo.td.com/repository/3rd-party-raw/cml-etreasury/dev2/5.6.3.0.43.0-T8/Config_UOB_5630430T8_cml_dev2-1.0.0.jar</fileUri>
+         <targetPath>/tmp/xldeploy</targetPath>
+         <targetPathShared>true</targetPathShared>
+         <createTargetPath>true</createTargetPath>
+         <targetFileName>Config_UOB_5630430T8_cml_dev2.jar</targetFileName>
+      </file.File>
+   </deployables>
+   <applicationDependencies/>
+   <dependencyResolution>LATEST</dependencyResolution>
+   <undeployDependencies>false</undeployDependencies>
+   <templates/>
+   <boundTemplates/>
+</udm.DeploymentPackage>
